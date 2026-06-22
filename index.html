@@ -49,22 +49,20 @@
         </label>
       </div>
 
-      <button class="convert-btn" id="convertBtn">오늘의 감각으로 보기</button>
-
       <section class="result-box" aria-live="polite">
         <p class="result-kicker">변환 결과</p>
         <h3 id="resultMain"></h3>
         <p id="resultSub"></p>
       </section>
 
-      <section class="feel-box">
-        <h3>💡 오늘날 체감</h3>
-        <ul id="feelList"></ul>
-      </section>
+      <div class="insight-toggle" role="group" aria-label="추가 정보">
+        <button id="feelTab" class="insight-btn active" type="button">💡 체감</button>
+        <button id="bibleTab" class="insight-btn" type="button">📖 성경</button>
+      </div>
 
-      <section class="bible-box">
-        <h3>📖 성경 속 예시</h3>
-        <ul id="bibleList"></ul>
+      <section class="insight-box">
+        <h3 id="insightTitle">💡 오늘날 체감</h3>
+        <ul id="insightList"></ul>
       </section>
     </section>
 

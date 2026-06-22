@@ -1,4 +1,4 @@
-const CACHE_NAME = "cen-bible-measures-ui-v2";
+const CACHE_NAME = "cen-bible-measures-v12-compact-tabs";
 const ASSETS = [
   "./",
   "./index.html",
