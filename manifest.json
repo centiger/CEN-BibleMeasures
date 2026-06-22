@@ -1,0 +1,25 @@
+{
+  "name": "CEN Bible Measures",
+  "short_name": "BibleMeasures",
+  "description": "성경의 단위를 오늘의 감각으로 이해합니다.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#081016",
+  "theme_color": "#081016",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

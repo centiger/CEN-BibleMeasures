@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#081016" />
+  <meta name="description" content="CEN Bible Measures - 성경의 단위를 오늘의 감각으로 이해합니다." />
+  <meta property="og:title" content="CEN Bible Measures" />
+  <meta property="og:description" content="성경의 길이, 무게, 부피, 화폐, 시간을 현대 단위와 체감 예시로 이해합니다." />
+  <title>CEN Bible Measures</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./assets/icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div class="badge">CEN Bible 2.0</div>
+      <h1>CEN Bible Measures</h1>
+      <p class="subtitle">성경의 단위를 오늘의 감각으로</p>
+      <p class="hero-text">성경 속 숫자와 단위를 현대 단위로 바꾸고, 익숙한 예시로 크기와 가치를 체감합니다.</p>
+    </section>
+
+    <section class="guide-card">
+      <h2>성경단위 활용하기</h2>
+      <ol>
+        <li>단위 종류를 선택합니다.</li>
+        <li>숫자와 성경 단위를 입력합니다.</li>
+        <li>현대 단위와 체감 예시를 확인합니다.</li>
+      </ol>
+    </section>
+
+    <section class="measure-tabs" id="measureTabs" aria-label="성경단위 종류"></section>
+
+    <section class="converter-card">
+      <div class="converter-head">
+        <div class="big-icon" id="categoryIcon">📏</div>
+        <div>
+          <h2 id="categoryTitle">길이</h2>
+          <p id="categoryDesc"></p>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <label>
+          <span>숫자</span>
+          <input id="amountInput" type="number" inputmode="decimal" min="0" step="any" />
+        </label>
+        <label>
+          <span>성경 단위</span>
+          <select id="unitSelect"></select>
+        </label>
+      </div>
+
+      <button class="convert-btn" id="convertBtn">오늘의 감각으로 보기</button>
+
+      <section class="result-box" aria-live="polite">
+        <p class="result-kicker">변환 결과</p>
+        <h3 id="resultMain"></h3>
+        <p id="resultSub"></p>
+      </section>
+
+      <section class="feel-box">
+        <h3>💡 오늘날 체감</h3>
+        <ul id="feelList"></ul>
+      </section>
+
+      <section class="bible-box">
+        <h3>📖 성경 속 예시</h3>
+        <ul id="bibleList"></ul>
+      </section>
+    </section>
+
+    <p class="notice">※ 성경 단위는 시대와 지역에 따라 차이가 있습니다. 이 앱은 정확한 계량보다 “대략 이 정도였구나”를 돕는 체감형 도구입니다.</p>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
