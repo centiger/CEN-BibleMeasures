@@ -26,7 +26,7 @@
       <h2>성경단위 활용하기</h2>
       <ol>
         <li>단위 종류를 선택합니다.</li>
-        <li>숫자와 성경 단위를 입력합니다.</li>
+        <li>변환 방향을 선택합니다.</li>
         <li>현대 단위와 체감 예시를 확인합니다.</li>
       </ol>
     </section>
@@ -42,13 +42,18 @@
         </div>
       </div>
 
+      <div class="direction-toggle" role="group" aria-label="변환 방향">
+        <button id="toModernBtn" class="dir-btn active" type="button">성경 → 현대</button>
+        <button id="toBibleBtn" class="dir-btn" type="button">현대 → 성경</button>
+      </div>
+
       <div class="form-grid">
         <label>
-          <span>숫자</span>
+          <span id="amountLabel">성경 단위 숫자</span>
           <input id="amountInput" type="number" inputmode="decimal" min="0" step="any" />
         </label>
         <label>
-          <span>성경 단위</span>
+          <span id="unitLabel">성경 단위</span>
           <select id="unitSelect"></select>
         </label>
       </div>

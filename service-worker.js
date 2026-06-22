@@ -1,4 +1,4 @@
-const CACHE_NAME = "cen-bible-measures-v3";
+const CACHE_NAME = "cen-bible-measures-bidirectional-v1";
 const ASSETS = [
   "./",
   "./index.html",
